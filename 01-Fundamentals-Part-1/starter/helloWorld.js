@@ -232,7 +232,7 @@ if (height) {
 else {
     console.log("height undefined")
 }
-*/
+
 
 
 // Equality operators ==, ===
@@ -246,7 +246,120 @@ else {
     console.log("student not graduating")
 }
 
-prompt("What's your favourite number?")
+const favourite = Number(prompt("What's your favourite number?"))
+console.log(favourite);
+console.log(typeof favourite)
+
+if (favourite === 23) {
+    console.log('Cool! 23 is a number')
+}
+else if(favourite === 7) {
+    console.log("7 is alright, decent choice")
+}
+else {
+    console.log("bad pick")
+}
+
+if(favourite !== 23) {
+    console.log("should have picked number 23")
+}
+
+
+
+// boolean logic
+// and or & not
+// !A (not A), A && B, A || B
+
+// logical operators
+const hasDriversLicense = true;
+const hasGoodVision = true;
+const isTired = true;
+const shouldDrive = hasDriversLicense && hasGoodVision && !isTired
+
+
+if(shouldDrive) {
+    console.log("Fit to drive")
+}
+else {
+    console.log("Not fit to driver")
+}
+
+// const isTired = true;
+// console.log(hasDriversLicense && hasGoodVision && isTired)
+
+
+
+// The switch statement
+const day = 'monday';
+
+switch(day) {
+    case 'monday':
+        console.log('not friday :/ (monday)')
+        break;
+    case 'tuesday':
+        console.log('not friday :/ (tuesday)')
+        break;
+    case 'wednesday':
+    case 'thursday':
+         console.log('not friday (W or H)')
+         break;
+    case 'friday':
+        console.log('ITS FRIDAY!!! :D')
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log("it's the weekend")
+        break;
+    default:
+        console.log("not a day :/")
+}
+
+if (day === 'monday') {
+
+}
+else if (day === 'tuesday') {
+
+}
+// etc
+
+
+
+// Statements and expressions
+// no code, just a lecture
+
+// The conditional (ternary) operator
+const age = 23;
+age >= 18 ? console.log('I am able to vote') :
+console.log('I can\'t vote yet')
+
+
+const voterStatus = age >= 18 ? 'voter' : 'non-voter';
+console.log(voterStatus)
+
+
+console.log(`I am a ${age >= 18 ? 'voter' : 'non-voter'}`)
+
+
+// coding challenge 4
+const bill = 300;
+let tip = (300 >= bill && bill >= 50) ? (bill*0.15) : (bill*0.2);
+console.log(bill, tip, (bill+tip))
+*/
+
+
+// java ES5, ES6+ and ESNext
+// no code, just a lecture
+// note to use babel to transpile and polyfill code
+// ESNext (future versions of JS)
+
+
+
+
+
+
+
+
+
 
 
 
