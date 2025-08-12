@@ -27,7 +27,7 @@ body {
 }
 
 .countries {
-  /* margin-bottom: 8rem; */
+  margin-bottom: 4rem; /* previously hidden and 8rem */
   display: flex;
 
   font-size: 2rem;
